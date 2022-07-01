@@ -56,22 +56,23 @@ For more details about how the features are extracted, please see my [report](ht
 
 
 # 2. Install Dependency (OpenPose)
-We need Python >= 3.6.
+First, download the repositories. We need Python >= 3.6.
+```bash
+git clone https://github.com/yfeiwu/Realtime-Action-Recognition
+```
+
 
 ## 2.1. Download tf-pose-estimation
 
 This project uses a OpenPose program developped by [ildoonet](https://github.com/ildoonet). The source project has been deleted. I've managed to fork it to here: [tf-pose-estimation](https://github.com/felixchenfy/ildoonet-tf-pose-estimation). 
 
-```bash
-git clone https://github.com/yfeiwu/Realtime-Action-Recognition
-```
 
 Please download it:
 ```bash
+cd Realtime-Action-Recognition/
 export MyRoot=$PWD
-cd src/githubs  
-git clone https://github.com/felixchenfy/ildoonet-tf-pose-estimation
-mv ildoonet-tf-pose-estimation tf-pose-estimation
+cd src && mkdir githubs && cd githubs
+git clone https://github.com/yufeiwu/tf-pose-estimation
 ```
 
 ## 2.2. Download pretrained models
