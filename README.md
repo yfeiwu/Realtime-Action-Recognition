@@ -83,21 +83,21 @@ cd $MyRoot/src/githubs/tf-pose-estimation/models/graph/cmu
 bash download.sh  
 ```
 
-## 2.3. Insteall libraries
+## 2.3. Install libraries
 Basically you have to follow the tutorial of `tf-pose-estimation` project. If you've setup the env for that project, then it's almost the same env to run my project.
 
-Please follow its tutorial [here](https://github.com/felixchenfy/ildoonet-tf-pose-estimation#install). I've copied what I ran to below:
-```bash
-conda create -n tf tensorflow-gpu
+Please follow its tutorial [here](https://github.com/yfeiwu/tf-pose-estimation#install). I've copied what I ran to below:
+```bashyf
+conda create -n tf tensorflow-gpu==1.13.1
 conda activate tf
 
 cd $MyRoot/src/githubs/tf-pose-estimation
-pip3 install -r requirements.txt
-pip3 install jupyter tqdm
+pip install -r requirements.txt
+pip install jupyter tqdm
 
 # Install tensorflow.
 # You may need to take a few tries and select the version that is compatible with your cuDNN. If the version mismatches, you might get this error: "Error : Failed to get convolution algorithm."
-pip3 install tensorflow-gpu==1.13.1
+pip install tensorflow-gpu==1.13.1
 
 # Compile c++ library as described [here](https://github.com/felixchenfy/ildoonet-tf-pose-estimation#install-1):
 sudo apt install swig
