@@ -62,6 +62,10 @@ We need Python >= 3.6.
 
 This project uses a OpenPose program developped by [ildoonet](https://github.com/ildoonet). The source project has been deleted. I've managed to fork it to here: [tf-pose-estimation](https://github.com/felixchenfy/ildoonet-tf-pose-estimation). 
 
+```bash
+git clone https://github.com/yfeiwu/Realtime-Action-Recognition
+```
+
 Please download it:
 ```bash
 export MyRoot=$PWD
